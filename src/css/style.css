@@ -1,0 +1,934 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+i {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Top Bar hissenin baslangici */
+.top-bar {
+  background-color: #00796b;
+}
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0 7px 0;
+}
+.top-bar .container .left i {
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.top-bar .container .left span {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+.top-bar .container .left span:hover {
+  text-decoration: underline;
+}
+.top-bar .container .right i {
+  font-size: 14px;
+  color: #524e4e;
+  padding: 0 10px 0 10px;
+  cursor: pointer;
+}
+.top-bar .container .right i:hover {
+  color: #ffffff;
+}
+
+/* Top Bar hissenin sonu */
+/* Header hissenin baslangici */
+header .main-header {
+  background-color: #008374;
+}
+header .main-header .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0 17px 0;
+}
+header .main-header .container .logo h4 {
+  font-size: 30px;
+}
+header .main-header .container .logo h4 strong {
+  color: #f96f59;
+}
+header .main-header .container .menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+header .main-header .container .menu ul li.navli {
+  position: relative;
+}
+header .main-header .container .menu ul li.navli .dropdown {
+  top: 140%;
+  left: 0;
+  width: 180px;
+  height: 250px;
+  background-color: #ffffff;
+  color: #008d7d;
+  position: absolute;
+  display: none;
+  transition: all 0.7s;
+  border-radius: 10px;
+}
+header .main-header .container .menu ul li.navli .dropdown ul {
+  flex-direction: column;
+  padding: 0 30px 0 0;
+}
+header .main-header .container .menu ul li.navli .dropdown ul li a {
+  color: #008374;
+  padding-right: 10px;
+}
+header .main-header .container .menu ul li.navli:hover .dropdown {
+  display: block;
+  transition: all 0.7s;
+}
+header .main-header .container .menu ul li {
+  margin: 22px 0 10px 28px;
+}
+header .main-header .container .menu ul li a {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7019607843);
+  position: relative;
+  transition: all 0.4s;
+}
+header .main-header .container .menu ul li a::before {
+  content: "";
+  bottom: -8px;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #f96f59;
+  transition: all 0.4s;
+}
+header .main-header .container .menu ul li a:hover::before {
+  width: 100%;
+}
+header .main-header .container .menu ul li a:hover {
+  color: #ffffff;
+}
+
+/* Header hissenin sonu */
+/* Home hissenin baslangici */
+#home-section .first-section {
+  width: 100%;
+  height: 660px;
+  background-color: #008374;
+}
+#home-section .first-section .container .row .home-inline {
+  padding: 110px 0 0 0;
+}
+#home-section .first-section .container .row .home-inline h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #ffffff;
+}
+#home-section .first-section .container .row .home-inline p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+}
+#home-section .first-section .container .row .home-inline .btn {
+  padding: 25px 0 0 0;
+  border: none;
+}
+#home-section .first-section .container .row .home-inline .btn span {
+  color: #ffffff;
+  padding: 15px 40px 15px 40px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 25px;
+}
+#home-section .first-section .container .row .home-inline .btn span:hover {
+  border: 2px solid #ffffff;
+}
+#home-section .first-section .container .row .home-inline .btn a {
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 15px;
+}
+#home-section .first-section .container .row .home-inline .btn a:hover {
+  color: #ffffff;
+}
+#home-section .first-section .container .row .home-inline .btn a i {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+}
+#home-section .first-section .container .row .home2-inline {
+  padding: 30px 0 0 0;
+}
+#home-section .first-section .container .row .home2-inline img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Home hissenin sonu */
+/* First-1 hissenin baslangici */
+.first-1 .container .row {
+  margin-top: -10rem !important;
+}
+.first-1 .container .row .first-inline .icon-box {
+  padding: 60px 30px;
+  background-color: #008d7d;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.first-1 .container .row .first-inline .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+.first-1 .container .row .first-inline .icon-box .icon i {
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.first-1 .container .row .first-inline .icon-box .icon i:hover {
+  color: #ffffff;
+}
+.first-1 .container .row .first-inline .icon-box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* First-1 hissenin sonu */
+/* About hissenin baslangici */
+#about-section {
+  padding: 60px 0 0 0;
+}
+#about-section .second-section .container .section-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#about-section .second-section .container .section-header p {
+  font-size: 16px;
+  color: #6f6f6f;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#about-section .second-section .container .row .about1-inline h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 18px;
+}
+#about-section .second-section .container .row .about1-inline img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+#about-section .second-section .container .row .about1-inline p {
+  margin-top: 18px;
+  color: #222222;
+}
+#about-section .second-section .container .row .about2-inline p {
+  font-size: 16px;
+  color: #222222;
+}
+#about-section .second-section .container .row .about2-inline ul {
+  list-style: circle;
+  list-style: #008d7d;
+}
+#about-section .second-section .container .row .about2-inline ul li span {
+  font-size: 16px;
+  color: #222222;
+}
+#about-section .second-section .container .row .about2-inline h1 {
+  font-size: 16px;
+  color: #222222;
+}
+#about-section .second-section .container .row .about2-inline img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+/* About hissenin sonu */
+/* Second-2 hissenin baslangici */
+.second-2 {
+  padding: 80px 0 0 0;
+}
+.second-2 .container .row .second-inline img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.second-2 .container .row .second2-inline .second-2-inline {
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+.second-2 .container .row .second2-inline .second-2-inline span {
+  font-size: 40px;
+  font-weight: 600;
+  color: #008374;
+  margin-right: 22px;
+}
+.second-2 .container .row .second2-inline .second-2-inline p {
+  font-size: 14px;
+  color: #6f6f6f;
+  margin: 0;
+}
+.second-2 .container .row .second2-inline .second-2-inline p strong {
+  color: #222222;
+  font-weight: 600;
+}
+
+/* Second-2 hissenin sonu */
+/* Second-3 hissenin baslangici */
+.second-3 {
+  padding: 80px 0 0 0;
+  height: 600px;
+}
+.second-3 .container {
+  height: 100%;
+  background-image: url("../images/cta-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 13px;
+}
+.second-3 .container h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 170px;
+}
+.second-3 .container p {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.second-3 .container span {
+  padding: 12px 48px;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 450px;
+  font-weight: 600;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.second-3 .container span:hover {
+  background-color: #008d7d;
+  border: 2px solid #008d7d;
+}
+
+/* Second-3 hissenin sonu */
+/* Services hissenin baslangici */
+#services {
+  background-color: #f6f6f6;
+  padding: 50px 0 0 0;
+}
+#services .third .container .section-header h2 {
+  font-size: 32px;
+  color: #222222;
+  font-weight: 600;
+  text-align: center;
+}
+#services .third .container .section-header p {
+  font-size: 16px;
+  color: #6f6f6f;
+  text-align: center;
+  margin-top: 35px;
+}
+#services .third .container .row .third-1 .icon3-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 40px 40px 40px 40px;
+  transition: all 0.5s;
+}
+#services .third .container .row .third-1 .icon3-box:hover h3 {
+  border-bottom: 3px;
+  text-decoration: underline;
+  text-decoration-color: #008d7d;
+}
+#services .third .container .row .third-1 .icon3-box:hover i {
+  background-color: #008374;
+  border-radius: 50%;
+}
+#services .third .container .row .third-1 .icon3-box .icon3 i {
+  font-size: 45px;
+  width: 56px;
+  height: 56px;
+}
+#services .third .container .row .third-1 .icon3-box h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222222;
+  margin-top: 10px;
+}
+#services .third .container .row .third-1 .icon3-box p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#services .third .container .row .third-1 .icon3-box a {
+  color: #008d7d;
+}
+
+/* Services hissenin sonu */
+/* Portfolio hissenin baslangici */
+#portfolio-section {
+  padding: 40px 0 0 0;
+}
+#portfolio-section .four .container .section-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #222222;
+  text-align: center;
+}
+#portfolio-section .four .container .section-header p {
+  font-size: 16px;
+  color: #6f6f6f;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#portfolio-section .four .container .four-inline .four-inline-menu {
+  display: flex;
+  justify-content: center;
+}
+#portfolio-section .four .container .four-inline .four-inline-menu ul {
+  text-align: center;
+  list-style-type: none;
+}
+#portfolio-section .four .container .four-inline .four-inline-menu ul li a {
+  font-size: 18px;
+  color: #222222;
+}
+#portfolio-section .four .container .four-inline .four-inline-menu ul li a:hover {
+  color: #008374;
+}
+#portfolio-section .four .container .four-inline .row .portfolio-inline {
+  margin-bottom: 40px;
+  border-radius: 1px;
+  overflow: hidden;
+}
+#portfolio-section .four .container .four-inline .row .portfolio-inline .portfolio-img {
+  overflow: hidden;
+}
+#portfolio-section .four .container .four-inline .row .portfolio-inline .portfolio-img img {
+  width: 100%;
+  transition: all 0.3s;
+}
+#portfolio-section .four .container .four-inline .row .portfolio-inline .portfolio-img img:hover {
+  transform: scale(1.2);
+}
+#portfolio-section .four .container .four-inline .row .portfolio-inline .portfolio-text {
+  padding: 12px 0 8px 15px;
+  background-color: #fff9f9;
+}
+#portfolio-section .four .container .four-inline .row .portfolio-inline .portfolio-text h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222222;
+}
+#portfolio-section .four .container .four-inline .row .portfolio-inline .portfolio-text p {
+  font-size: 14px;
+  color: #6C757D;
+}
+
+/* Portfolio hissenin sonu */
+/* Team hissenin baslangici */
+#team-section {
+  padding: 60px 0 0 0;
+  background-color: #fff9f9;
+}
+#team-section .five .container .section-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #222222;
+  text-align: center;
+}
+#team-section .five .container .section-header p {
+  font-size: 16px;
+  color: #6f6f6f;
+  text-align: center;
+  margin-top: 20px;
+}
+#team-section .five .container .row {
+  padding: 30px 0 0 0;
+}
+#team-section .five .container .row .team-inline .member {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 13px;
+  overflow: hidden;
+}
+#team-section .five .container .row .team-inline .member img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  padding: 15px 15px 15px 15px;
+}
+#team-section .five .container .row .team-inline .member h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222222;
+  margin-top: 5px;
+}
+#team-section .five .container .row .team-inline .member span {
+  font-size: 14px;
+  color: #6C757D;
+  margin-bottom: 15px;
+}
+#team-section .five .container .row .team-inline .member .member-social i {
+  width: 37px;
+  height: 37px;
+  font-size: 19px;
+  color: #6f6f6f;
+  margin-right: 15px;
+  border: 1px solid #6f6f6f;
+  border-radius: 50%;
+  padding: 7px 7px;
+  margin: 15px 5px 15px 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#team-section .five .container .row .team-inline .member .member-social i:hover {
+  color: #008d7d;
+  border: 1px solid #008d7d;
+}
+
+/* Team hissenin sonu */
+/* Pricing hissenin baslangici */
+.pricing-section {
+  padding: 60px;
+  background-color: #e4ebf1;
+}
+.pricing-section .container .section-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #222222;
+  text-align: center;
+}
+.pricing-section .container .section-header p {
+  font-size: 16px;
+  color: #6f6f6f;
+  margin-top: 20px;
+}
+.pricing-section .container .row .pricing-inline {
+  padding-top: 30px;
+}
+.pricing-section .container .row .pricing-inline .pricing2-item {
+  padding: 80px 0 80px 0;
+  text-align: center;
+  background-color: #ffffff;
+  border: 4px solid #008374;
+  border-radius: 15px;
+}
+.pricing-section .container .row .pricing-inline .pricing2-item h3 {
+  font-size: 22px;
+  color: #555555;
+  font-weight: 600;
+  text-align: center;
+}
+.pricing-section .container .row .pricing-inline .pricing2-item .pricing2-icon i {
+  font-size: 36px;
+  width: 83px;
+  height: 83px;
+  border: 1px solid #008d7d;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #008d7d;
+  padding: 20px;
+}
+.pricing-section .container .row .pricing-inline .pricing2-item .pricing2-icon h4 {
+  font-size: 50px;
+  color: #F85A40;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.pricing-section .container .row .pricing-inline .pricing2-item .pricing2-icon h4 sup {
+  font-size: 29px;
+  color: #F85A40;
+}
+.pricing-section .container .row .pricing-inline .pricing2-item .pricing2-icon h4 span {
+  font-size: 19px;
+  color: rgba(108, 117, 125, 0.8);
+}
+.pricing-section .container .row .pricing-inline .pricing2-item .pricing2-icon ul {
+  list-style-type: none;
+}
+.pricing-section .container .row .pricing-inline .pricing2-item .pricing2-icon ul li {
+  padding: 10px;
+  font-size: 18px;
+  color: #6c757d;
+}
+.pricing-section .container .row .pricing-inline .pricing2-item .pricing2-icon ul li.na {
+  font-size: 18px;
+  color: #6c757d;
+}
+.pricing-section .container .row .pricing-inline .pricing2-item .pricing2-icon .text-center2 {
+  margin-top: 45px;
+}
+.pricing-section .container .row .pricing-inline .pricing2-item .pricing2-icon .text-center2 a {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 12px 42px;
+  border: 1px solid #008374;
+  border-radius: 20px;
+  color: #008374;
+  transition: all 0.4s;
+}
+.pricing-section .container .row .pricing-inline .pricing2-item .pricing2-icon .text-center2 a:hover {
+  color: #ffffff;
+  background-color: #008374;
+}
+.pricing-section .container .row .pricing-inline .pricing-item {
+  text-align: center;
+  padding: 80px 0 30px 0;
+}
+.pricing-section .container .row .pricing-inline .pricing-item h3 {
+  font-size: 20px;
+  color: #555555;
+  font-weight: 600;
+  text-align: center;
+}
+.pricing-section .container .row .pricing-inline .pricing-item .pricing-icon i {
+  font-size: 35px;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #008d7d;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #008d7d;
+  padding: 20px;
+}
+.pricing-section .container .row .pricing-inline .pricing-item .pricing-icon h4 {
+  font-size: 48px;
+  color: #F85A40;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.pricing-section .container .row .pricing-inline .pricing-item .pricing-icon h4 sup {
+  font-size: 28px;
+  color: #F85A40;
+}
+.pricing-section .container .row .pricing-inline .pricing-item .pricing-icon h4 span {
+  font-size: 18px;
+  color: rgba(108, 117, 125, 0.8);
+}
+.pricing-section .container .row .pricing-inline .pricing-item .pricing-icon ul {
+  list-style-type: none;
+}
+.pricing-section .container .row .pricing-inline .pricing-item .pricing-icon ul li {
+  padding: 10px;
+  font-size: 16px;
+  color: #6c757d;
+}
+.pricing-section .container .row .pricing-inline .pricing-item .pricing-icon ul li.na {
+  font-size: 16px;
+  color: #6c757d;
+  text-decoration: line-through;
+}
+.pricing-section .container .row .pricing-inline .pricing-item .pricing-icon .text-center1 {
+  margin-top: 25px;
+}
+.pricing-section .container .row .pricing-inline .pricing-item .pricing-icon .text-center1 a {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 40px;
+  border: 1px solid #008374;
+  border-radius: 20px;
+  color: #008374;
+  transition: all 0.4s;
+}
+.pricing-section .container .row .pricing-inline .pricing-item .pricing-icon .text-center1 a:hover {
+  color: #ffffff;
+  background-color: #008374;
+}
+
+/* Pricing hissenin sonu */
+/* Blog hissenin baslangici */
+#blog-section {
+  padding: 60px 0 0 0;
+}
+#blog-section .six .container .section-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #222222;
+  text-align: center;
+}
+#blog-section .six .container .section-header p {
+  font-size: 16px;
+  color: #6f6f6f;
+  text-align: center;
+  margin-top: 20px;
+}
+#blog-section .six .container .row {
+  margin-top: 50px;
+}
+#blog-section .six .container .row .blog-inline article {
+  background-color: #eee6e6;
+}
+#blog-section .six .container .row .blog-inline article .blog-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#blog-section .six .container .row .blog-inline article p {
+  font-size: 16px;
+  color: #6f6f6f;
+  padding: 15px 12px 0 20px;
+}
+#blog-section .six .container .row .blog-inline article h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222222;
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+}
+#blog-section .six .container .row .blog-inline article h2:hover {
+  color: #009282;
+}
+#blog-section .six .container .row .blog-inline article .blog-text {
+  display: flex;
+  align-items: center;
+  padding: 0 0 10px 20px;
+}
+#blog-section .six .container .row .blog-inline article .blog-text img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  border: none;
+}
+#blog-section .six .container .row .blog-inline article .blog-text .blog-text-inline p {
+  font-size: 15px;
+  color: #222222;
+  font-weight: 600;
+}
+#blog-section .six .container .row .blog-inline article .blog-text .blog-text-inline h1 {
+  font-size: 13px;
+  color: #6f6f6f;
+  margin-left: 19px;
+}
+
+/* Blog hissenin sonu */
+/* Contact hissenin baslangici */
+#contact-section {
+  padding: 80px 0 0 0;
+}
+#contact-section .seven .container .section-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #222222;
+  text-align: center;
+}
+#contact-section .seven .container .section-header p {
+  font-size: 16px;
+  color: #6f6f6f;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+#contact-section .seven .container .row .contact-inline {
+  background-color: #008374;
+  padding: 25px 20px 25px 20px;
+  border-radius: 10px 0 0 10px;
+}
+#contact-section .seven .container .row .contact-inline .left-contact .box {
+  width: 100%;
+  background-color: #009282;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+}
+#contact-section .seven .container .row .contact-inline .left-contact .box i {
+  font-size: 20px;
+  color: #ffffff;
+  border: 1px solid #009282;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#contact-section .seven .container .row .contact-inline .left-contact .box i:hover {
+  color: #00796b;
+}
+#contact-section .seven .container .row .contact-inline .left-contact .box .box-inline h4 {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-left: 15px;
+}
+#contact-section .seven .container .row .contact-inline .left-contact .box .box-inline p {
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 15px;
+}
+#contact-section .seven .container .contact2-inline form {
+  height: 570px;
+  padding: 30px;
+  background-color: #eee6e6;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#contact-section .seven .container .contact2-inline form .row .fr-1 {
+  padding-bottom: 18px;
+}
+#contact-section .seven .container .contact2-inline form .row .fr-1 input {
+  border: 1px solid #008374;
+  border-radius: 0;
+  box-shadow: none;
+}
+#contact-section .seven .container .contact2-inline form .row .fr-2 {
+  padding-bottom: 18px;
+}
+#contact-section .seven .container .contact2-inline form .row .fr-2 input {
+  border: 1px solid #008374;
+  border-radius: 0;
+  box-shadow: none;
+}
+#contact-section .seven .container .contact2-inline form .form-group {
+  padding-bottom: 18px;
+}
+#contact-section .seven .container .contact2-inline form .form-group input {
+  border: 1px solid #008374;
+  border-radius: 0;
+  box-shadow: none;
+}
+#contact-section .seven .container .contact2-inline form .form-group2 {
+  padding-bottom: 8px;
+}
+#contact-section .seven .container .contact2-inline form .form-group2 textarea {
+  border: 1px solid #008374;
+  border-radius: 0;
+  box-shadow: none;
+}
+#contact-section .seven .container .contact2-inline form .text-center button {
+  padding: 12px 40px;
+  background-color: #008d7d;
+  border: 1px solid #008d7d;
+  border-radius: 25px;
+  color: #ffffff;
+  margin-top: 25px;
+  transition: all 0.4s;
+}
+#contact-section .seven .container .contact2-inline form .text-center button:hover {
+  background-color: #008374;
+}
+
+/* Contact hissenin sonu */
+/* Footer hissenin baslangici */
+footer {
+  padding: 50px 0 0 0;
+}
+footer .main-footer {
+  background-color: #008374;
+  color: #ffffff;
+}
+footer .main-footer .container .row {
+  padding: 50px 0 50px 0;
+}
+footer .main-footer .container .row .footer-info {
+  margin: 24px 0 0;
+  padding: 0 12px;
+}
+footer .main-footer .container .row .footer-info h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+footer .main-footer .container .row .footer-info p {
+  font-size: 14px;
+}
+footer .main-footer .container .row .footer-info .social-icons i {
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 10px 12px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 6px;
+  transition: all 0.3s;
+}
+footer .main-footer .container .row .footer-info .social-icons i:hover {
+  border: 1px solid #ffffff;
+}
+footer .main-footer .container .row .footer-link {
+  margin: 24px 0 30px;
+  padding: 0 12px;
+}
+footer .main-footer .container .row .footer-link h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+footer .main-footer .container .row .footer-link ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer .main-footer .container .row .footer-link ul li {
+  display: flex;
+  align-items: center;
+}
+footer .main-footer .container .row .footer-link ul li a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+footer .main-footer .container .row .footer-link ul li a:hover {
+  color: #ffffff;
+}
+footer .main-footer .container .row .footer-social {
+  margin: 24px 0 0;
+  padding: 0 12px;
+}
+footer .main-footer .container .row .footer-social h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+footer .main-footer .container .row .footer-social p {
+  font-size: 14px;
+  margin-top: 20px;
+  margin: 29px 0 29px;
+}
+footer .main-footer .container .row .copy-right p {
+  font-size: 14px;
+  text-align: center;
+}
+footer .main-footer .container .row .credits p {
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Footer hissenin sonu *//*# sourceMappingURL=style.css.map */
